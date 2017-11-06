@@ -1,10 +1,10 @@
-# Superpowers-core Docker container
+# Superpowers-core Docker image
 
-This is a docker container for host a Superpowers-core server. Obviously.
+This is a docker image for host a Superpowers-core server. Obviously.
 
 [Superpowers](http://superpowers-html5.com) is a great opensource game engine, and one of the best feature is live collaboration !  
 But you need a server to host the tool. You can host one on your computer, on a server your rent or even on your Raspberry Pi.  
-And if you're comfortable with [Docker](https://docker.com), this is the faster way to run one.
+And if you're comfortable with [Docker](https://docker.com), this is the fastest way to run one.
 
 ## Run it quick
 
@@ -62,6 +62,7 @@ Use `sp-test` instead of `superpowers` for the test container.
 
 ## Want moar?
 
+- This image should run on Raspberry Pi. (yes, Docker is available on RPi)
 - This image embedded the superpowers core and only the game library.
 - This image target only the lastet superpowers-core release.
 
