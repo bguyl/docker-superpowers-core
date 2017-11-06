@@ -18,9 +18,11 @@ WORKDIR /superpowers-core
 # Install the game system
 RUN node server install game
 
+ADD start.sh .
+
 # Add password to the config file
-RUN echo '{"password":"unsecure"}' > config.json
+RUN printf '{\n"password":"unsecure"\n}' > config.json
 
 EXPOSE 4237 4238
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["sh", "start.sh"]
