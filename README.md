@@ -9,7 +9,7 @@ And if you're comfortable with [Docker](https://docker.com), this is the fastest
 ## Run it quick
 
 ```bash
-docker run -d -p 4237:4237 -p 4238:4238 --name superpowers -v projects:/superpowers-core/projects -e PASSWORD=your_password bguyl/superpowers-core
+docker run -d -p 4237:4237 -p 4238:4238 --name superpowers  v ./builds:/superpowers-core/builds -v projects:/superpowers-core/projects -e PASSWORD=your_password bguyl/superpowers-core
 ```
 
 **Please**, replace "your_password" by your actual password.  
@@ -62,7 +62,7 @@ Use `sp-test` instead of `superpowers` for the test container.
 
 ## Want moar?
 
-- This image should run on Raspberry Pi. (yes, Docker is available on RPi)
+- This image run on Raspberry Pi. (yes, Docker is available on RPi)
 - This image embedded the superpowers core and only the game library.
 - This image target only the lastet superpowers-core release.
 
